@@ -1,6 +1,6 @@
 var config = {
     token: 'josie',
-    appId: 'wxf7b28b05a78d409b',
+    appid: 'wxf7b28b05a78d409b',
     encodingAESKey: 'VMZlfbsrHbx9dURyvoosnKPXttq5tbtLZ607DOvJnA6'
 }
 
