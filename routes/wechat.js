@@ -13,14 +13,17 @@ router.use('/',wechat(config, function (req,res,next) {
     var message =req.weixin;
 
     console.log("message.FromUserName   :"+message.FromUserName);
-    if(message.FromUserName==='josie'){
+    console.log("message.Content        :"+message.Content);
+
+    message.Content
+    if(message.Content==='josie'){
         res.reply('josie ,i love u');
-    }else if(message.FromUserName==='text'){
+    }else if(message.Content==='text'){
         res.reply({
             content:'text object',
             type:'text'
         });
-    }else if (message.FromUserName==='bruce'){
+    }else if (message.Content==='bruce'){
         res.reply([{
             title:'bruce image',
             description:'handsome man',
