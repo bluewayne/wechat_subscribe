@@ -12,6 +12,7 @@ router.use('/',wechat(config, function (req,res,next) {
 
     var message =req.weixin;
 
+    console.log("message.FromUserName   :"+message.FromUserName);
     if(message.FromUserName==='josie'){
         res.reply('josie ,i love u');
     }else if(message.FromUserName==='text'){
